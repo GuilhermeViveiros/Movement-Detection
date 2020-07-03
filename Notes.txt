@@ -1,0 +1,37 @@
+
+Na diretoria de research
+
+-> protoc object_detection/protos/*.proto --python_out=.
+
+-> export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+
+Na diretoria de object detection
+
+-> python3 legacy/train.py --logtostderr --train_dir=/Users/guilhermeviveiros/Desktop/models/research/object_detection/training/ --pipeline_config_path=/Users/guilhermeviveiros/Desktop/models/research/object_detection/training/ssd_mobilenet_v1_coco.config
+
+
+python3 legacy/train.py --logtostderr --train_dir=../../../training/ --pipeline_config_path=../../../training/ssd_mobilenet_v1_coco.config
+
+
+
+Para object detection após rede neuronal estar treinada
+
+python3 export_inference_graph.py \
+    --input_type image_tensor \
+    --pipeline_config_path /Users/guilhermeviveiros/Desktop/models/research/object_detection/training/ssd_mobilenet_v1_coco.config \
+    --trained_checkpoint_prefix /Users/guilhermeviveiros/Desktop/models/research/object_detection/training/model.ckpt-50000 \
+    --output_directory  /Users/guilhermeviveiros/Desktop/models/research/object_detection/hand_graph \
+
+Nova versão
+
+python3 export_inference_graph.py \
+    --input_type image_tensor \
+    --pipeline_config_path /Users/guilhermeviveiros/Desktop/models/research/object_detection/training/ssd_mobilenet_v1_cocov2.config \
+    --trained_checkpoint_prefix /Users/guilhermeviveiros/Desktop/models/research/object_detection/training/model.ckpt-200002 \
+    --output_directory  /Users/guilhermeviveiros/Desktop/models/research/object_detection/hand_graph \
+
+
+
+#Aceder a gráficos
+
+tensorboard --logdir='training'
