@@ -1,6 +1,5 @@
 import sys
-from pynput.keyboard import Key, KeyCode, Controller as KeyboardController, Listener
-
+from pynput.keyboard import Key, KeyCode, Controller as KeyboardController
 keyboard = KeyboardController()
 
 
@@ -58,32 +57,10 @@ def minimize():
         keyboard.release('n')
 
 
-def on_press(key):
-    print('{0} pressed'.format(
-        key))
-
-
-def on_release(key):
-    if key == Key.esc:
-        # Stop Listenning for Keys
-        return False
-    elif key == KeyCode.from_char("q"):
-        scale('-')
-    elif key == KeyCode.from_char("w"):
-        scale('+')
-    elif key == KeyCode.from_char("a"):
-        swipe(Key.left)
-    elif key == KeyCode.from_char("s"):
-        swipe(Key.right)
-    elif key == Key.ctrl_r:
-        minimize()
-
-
 os_type = sys.platform
 
-print(os_type)
-
-
-with Listener(on_press=on_press, on_release=on_release) as listener:
-    listener.join()
-
+scale('+')
+scale('-')
+minimize()
+swipe(Key.right)
+swipe(Key.left)
