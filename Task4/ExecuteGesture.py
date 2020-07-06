@@ -1,9 +1,12 @@
 import sys
-from pyautogui import hotkey
-from pynput.keyboard import Key, Controller as KeyboardController
+import wx #pip install wxPython
+from pyautogui import hotkey #pip install PyAutoGUI
+from pynput.keyboard import Key, Controller as KeyboardController #pip install pynput
+from pynput.mouse import Controller as MouseController #pip install pynput
 
 
 keyboard = KeyboardController()
+mouse = MouseController()
 
 
 def scale(key):
@@ -21,8 +24,15 @@ def scale(key):
 
 
 def swipe(key):
+    app = wx.App(False)
+    width, height = wx.GetDisplaySize()
+    
+    width = int(width/2)
+    height = int(height/2)
+    
     if sys.platform == "darwin":
         hotkey('ctrl', key)
+        mouse.position = (width, height)
 
     elif sys.platform == "win32":
         win_key = Key.right
