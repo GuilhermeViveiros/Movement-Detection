@@ -32,7 +32,6 @@ def swipe(key):
     
     if sys.platform == "darwin":
         hotkey('ctrl', key)
-        mouse.position = (width, height)
 
     elif sys.platform == "win32":
         win_key = Key.right
@@ -48,6 +47,8 @@ def swipe(key):
             keyboard.release(Key.cmd)
             keyboard.release(Key.ctrl)
             keyboard.release(win_key)
+
+    mouse.position = (width, height)
 
 
 def minimize():
