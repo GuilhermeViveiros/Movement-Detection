@@ -9,7 +9,7 @@ keyboard = KeyboardController()
 def scale(key):
     first_key = Key.ctrl
 
-    if sys.platform == "darwin":
+    if "darwin" in sys.platform:
         first_key = Key.cmd
 
     try:
