@@ -23,13 +23,7 @@ def scale(key):
         keyboard.release(key)
 
 
-def swipe(key):
-    app = wx.App(False)
-    width, height = wx.GetDisplaySize()
-    
-    width = int(width/2)
-    height = int(height/2)
-    
+def swipe(key):    
     if sys.platform == "darwin":
         hotkey('ctrl', key)
 
@@ -47,8 +41,6 @@ def swipe(key):
             keyboard.release(Key.cmd)
             keyboard.release(Key.ctrl)
             keyboard.release(win_key)
-
-    mouse.position = (width, height)
 
 
 def minimize():

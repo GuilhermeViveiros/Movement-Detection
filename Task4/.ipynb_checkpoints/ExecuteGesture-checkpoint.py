@@ -1,15 +1,19 @@
 import sys
-from pyautogui import hotkey
-from pynput.keyboard import Key, KeyCode, Controller as KeyboardController
+import wx #pip install wxPython
+from pyautogui import hotkey #pip install PyAutoGUI
+from pynput.keyboard import Key, Controller as KeyboardController #pip install pynput
+from pynput.mouse import Controller as MouseController #pip install pynput
+
+
 keyboard = KeyboardController()
+mouse = MouseController()
 
 
 def scale(key):
+    first_key = Key.ctrl
+
     if sys.platform == "darwin":
         first_key = Key.cmd
-
-    if sys.platform == "win32":
-        first_key = Key.ctrl
 
     try:
         keyboard.press(first_key)
@@ -18,15 +22,16 @@ def scale(key):
         keyboard.release(first_key)
         keyboard.release(key)
 
-def swipe(key):
+
+def swipe(key):    
     if sys.platform == "darwin":
         hotkey('ctrl', key)
 
-    if sys.platform == "win32":
+    elif sys.platform == "win32":
+        win_key = Key.right
+
         if key == 'left':
             win_key = Key.left
-        else:
-            win_key = Key.right
         
         try:
             keyboard.press(Key.cmd)
@@ -46,7 +51,7 @@ def minimize():
         keyboard.release(Key.cmd)
         keyboard.release('m')
 
-    if sys.platform == "win32":
+    elif sys.platform == "win32":
         keyboard.press(Key.alt)
         keyboard.press(Key.space)
 
@@ -59,8 +64,8 @@ def minimize():
 
 os_type = sys.platform
 
-#scale('+')
-#scale('-')
-#minimize()
-#swipe(Key.right)
-#swipe('right')
+# scale('+')
+# scale('-')
+# minimize()
+# swipe('right')
+# swipe('left')
