@@ -1,12 +1,9 @@
 import sys
-import wx #pip install wxPython
-from pyautogui import hotkey #pip install PyAutoGUI
-from pynput.keyboard import Key, Controller as KeyboardController #pip install pynput
-from pynput.mouse import Controller as MouseController #pip install pynput
-
+import wx  # pip install wxPython
+from pyautogui import hotkey  # pip install PyAutoGUI
+from pynput.keyboard import Key, Controller as KeyboardController  # pip install pynput
 
 keyboard = KeyboardController()
-mouse = MouseController()
 
 
 def scale(key):
@@ -23,46 +20,30 @@ def scale(key):
         keyboard.release(key)
 
 
-def swipe(key):    
-    if sys.platform == "darwin":
+def swipe(key):
+    # app = wx.App(False)
+    # width, height = wx.GetDisplaySize()
+
+    # width = int(width / 2)
+    # height = int(height / 2)
+
+    os_type = sys.platform
+
+    if "darwin" in os_type:
         hotkey('ctrl', key)
+    elif "win" in os_type:
+        hotkey('win', 'ctrl', key)
 
-    elif sys.platform == "win32":
-        win_key = Key.right
-
-        if key == 'left':
-            win_key = Key.left
-        
-        try:
-            keyboard.press(Key.cmd)
-            keyboard.press(Key.ctrl)
-            keyboard.press(win_key)
-        finally:
-            keyboard.release(Key.cmd)
-            keyboard.release(Key.ctrl)
-            keyboard.release(win_key)
+    # click(width, height)
 
 
 def minimize():
-    if sys.platform == "darwin":
-        keyboard.press(Key.cmd)
-        keyboard.press('m')
+    os_type = sys.platform
 
-        keyboard.release(Key.cmd)
-        keyboard.release('m')
-
-    elif sys.platform == "win32":
-        keyboard.press(Key.alt)
-        keyboard.press(Key.space)
-
-        keyboard.release(Key.alt)
-        keyboard.release(Key.space)
-
-        keyboard.press('n')
-        keyboard.release('n')
-
-
-os_type = sys.platform
+    if "darwin" in os_type:
+        hotkey('command', 'm')
+    elif "win" in os_type:
+        hotkey('alt', 'space', 'n')
 
 # scale('+')
 # scale('-')
