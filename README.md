@@ -7,20 +7,12 @@ Virtual Environment with Gestual Commands on the Desktop
 
 Task 1) Frames do utilizador em tempo real
 
-    -> Done
-
 Task 2) Encontrar as mãos
-    
-    -> Done
-    -> https://github.com/victordibia/handtracking
 
 Task 3) Enviar várias imagens para a segunda rede neuronal e processar essas imagens e determinar resultado
 
-    -> Done
-
 Task 4) Processar esse resultado no Sistema Operativo
 
-   -> Done
 
 
 Virtual Environment with Gestual Commands on the Desktop
