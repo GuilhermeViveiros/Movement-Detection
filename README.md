@@ -72,5 +72,13 @@ Decisions to build a prototype were made throughout this work. These decisions h
 
 7. Regarding the execution of the process regarding the performed gesture, one possible optimization is to switch from using the simulation (simulate the event of pressing the buttons) to the use of direct calls to the operating system, i.e. instead of using key simulations directly execute the desired process. This optimization would be achieved with the programming language C ++ and would be what connects the application with the operating system.
 
+## Git Structure 
+1. Task 1 - Frames captured in real-time through **CV2**.
+2. Task 2 - Hand Detection.
+3. Task 3 - Track the hand and send X frames to the pipeline.
+4. Task 4 - Detect the specific gesture and execute it, for instance, in the user's computer.
 
-## [Paper](https://github.com/GuilhermeViveiros/LEI/blob/master/publishedVersion.pdf)
+Task 4) Processar esse resultado no Sistema Operativo
+
+
+## Paper can be found here : [Paper](https://github.com/GuilhermeViveiros/LEI/blob/master/publishedVersion.pdf)
