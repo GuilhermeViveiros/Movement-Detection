@@ -1,35 +1,12 @@
 # LEI
-Virtual Environment with Gestual Commands on the Desktop
+**Virtual Environment with Gestual Commands on the Desktop**
 ![Demo](https://github.com/GuilhermeViveiros/LEI/blob/master/demo.gif)
+
+
+ This product is related to a computer vision task and exhibits a pipeline of deep neural networks that allows the detection and execution of movements in various environments. One of the main aspirations is to detect real-time gestures performed by users (for instance, scale, swipe, minimize) and execute this action, for example, on the user's computer.
+
+![image](https://user-images.githubusercontent.com/36511161/110033192-fb1fce80-7d30-11eb-964f-454b090a4cb6.png)
+
 
 ## Relatorio
 [Relatorio](https://www.overleaf.com/8817112827nkrhbydjqgyf)
-
-
-Task 1) Frames do utilizador em tempo real
-
-Task 2) Encontrar as mãos
-
-Task 3) Enviar várias imagens para a segunda rede neuronal e processar essas imagens e determinar resultado
-
-Task 4) Processar esse resultado no Sistema Operativo
-
-
-
-Virtual Environment with Gestual Commands on the Desktop
-
-Sumário:
-	
-Pretende-se com este trabalho o desenvolvimento de uma ambiente virtual que consiga executar algumas operações do computador através de gestos virtuais.
-
-
-Em particular, o trabalho terá os seguintes
-objetivos: 
-
-1) Conseguir captar em tempo real o utilizador, processando todas essas frames em tempo real.
-
-2) Desenvolvimento de um pipeline de redes neurosis que permita a deteção das mãos em vários ambientes e que posteriormente determine qual a operação que o utilizador pretende na sequencia do movimento.
-
-4) Conseguir executar a operação determinada anteriormente no respetivo sistema operativo.
-
-Keywords: Data Science, Machine Learning, Computer Vision, Operative System.
