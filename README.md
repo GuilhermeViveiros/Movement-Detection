@@ -29,7 +29,7 @@ The developed pipeline has some similarities with personal assistants such as Al
 The dataset chosen had to be the most similar to the environment in which this system will operate, in this case users who are in front of a computer and where the quality of the camera, brightness and adjacent noise can vary innumerably.
 The first experiment was carried out with a set of data provided by Oxford, called the Hands Dataset: [Oxford-HandsDataset](http://www.robots.ox.ac.uk/ vgg/data/hands). However, the result was not what was desired and so it turned to researching an alternative set. Given the scarcity of research and availability carried out so far in this area, movement recognition for desktop (without the use of sensors), a dataset not very appropriate to the terms described, but where the results obtained are satisfactory and enough to show the efficiency of this prototype, namelly [Egohands Dataset](http://vision.soic.indiana.edu/projects/egohands)
 
-##IMAGEM TRIGGER HAND
+![TriggerHand](https://github.com/GuilhermeViveiros/LEI/blob/master/images/Egohands-Dataset.png)
 
 
 Model training can be done locally, on local GPUs that would take some time, or in the cloud. For the sake of time optimization, it was chosen to use the cloud. By reference only, the model training on a MacBook Air (Intel i5 2.6GHZ, 8GB RAM), ran at a maximum speed of 8 seconds with CPU and 3 seconds with GPU. It would take about 17 days to run approximately 200,000 epochs on the Mac, mentioned above, compared to 3 to 4 hours on the cloud. 
@@ -39,7 +39,7 @@ After passing the dataset to the respective server, in a few hours it were possi
 All of this model and successive API is provided by Tensorflow, Tensorboard was used in the visualization of the models, being the most significant parameter the loss of the same in the test dataset. Given the use of the Tensorflow Object Detection platform API for image detection, the training graphics were not made available, being which will only exemplify the loss of the model in the test set.
 Results after training:
 
-##MINHA IMAGEM MAO
+![Mine](https://github.com/GuilhermeViveiros/LEI/blob/master/images/Hand-classification.png)
 
 
 ### Movement Detection
@@ -49,7 +49,7 @@ The recognition of the operation to be performed was made by a another deep neur
 The first step for the construction of this network was, once again, the search for the data set, previously processed and treated, that could be used. After some searching and consultation, the [20BN-JESTER](https://20bn.com/datasets/jester).
 This dataset has a large collection of video excerpts from several individuals to perform predefined gestures, where each excerpt translates into a set of frames.
 
-### IMAGE GESTURE
+![Juster](https://github.com/GuilhermeViveiros/LEI/blob/master/images/20BN-JESTER.png)
 
 Of course all of the deep networks used within this work were considered both evaluating the accuracy and perfomance speed, since we need **real-time inference**.
 
