@@ -73,5 +73,4 @@ Decisions to build a prototype were made throughout this work. These decisions h
 7. Regarding the execution of the process regarding the performed gesture, one possible optimization is to switch from using the simulation (simulate the event of pressing the buttons) to the use of direct calls to the operating system, i.e. instead of using key simulations directly execute the desired process. This optimization would be achieved with the programming language C ++ and would be what connects the application with the operating system.
 
 
-## Paper
-[Paper](https://github.com/GuilhermeViveiros/LEI/blob/master/publishedVersion.pdf)
+## [Paper](https://github.com/GuilhermeViveiros/LEI/blob/master/publishedVersion.pdf)
