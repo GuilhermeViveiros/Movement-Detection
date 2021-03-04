@@ -49,7 +49,7 @@ The recognition of the operation to be performed was made by a another deep neur
 The first step for the construction of this network was, once again, the search for the data set, previously processed and treated, that could be used. After some searching and consultation, the [20BN-JESTER](https://20bn.com/datasets/jester).
 This dataset has a large collection of video excerpts from several individuals to perform predefined gestures, where each excerpt translates into a set of frames.
 
-<img src="https://github.com/GuilhermeViveiros/LEI/blob/master/images/20BN-JESTER.png" alt="Jester" width="2000"/>
+<img src="https://github.com/GuilhermeViveiros/LEI/blob/master/images/20BN-JESTER.png" alt="Jester" width="500"/>
 
 Of course all of the deep networks used within this work were considered both evaluating the accuracy and perfomance speed, since we need **real-time inference**.
 
