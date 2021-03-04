@@ -85,7 +85,4 @@ Decisions to build a prototype were made throughout this work. These decisions h
 3. Task 3 - Track the hand and send X frames to the pipeline.
 4. Task 4 - Detect the specific gesture and execute it, for instance, in the user's computer.
 
-Task 4) Processar esse resultado no Sistema Operativo
-
-
 ## Paper can be found here : [Paper](https://github.com/GuilhermeViveiros/LEI/blob/master/publishedVersion.pdf)
