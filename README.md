@@ -7,7 +7,7 @@
 For more details please contact one of the following:
 > [Guilherme Viveiros - Machine Learning Researcher - Owner](https://www.linkedin.com/in/guilherme-viveiros-28985418b/)\
 > [Luís Macedo - Software Engineer](https://www.linkedin.com/in/lu%C3%ADs-macedo-29315218b/)\
-> [Guilherme Andrade - Machine Learning Researcher]
+> [Guilherme Andrade - Machine Learning Researcher](https://www.linkedin.com/in/guilherme-andrade-738715197/)
 
 > This product is related to a computer vision task and exhibits a pipeline of deep neural networks that allows the detection and execution of movements in various environments. One of the main aspirations is to detect real-time gestures performed by users (for instance, scale, swipe, minimize) and execute this action, for example, on the user's computer.
 
