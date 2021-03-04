@@ -1,5 +1,6 @@
 # LEI
 Virtual Environment with Gestual Commands on the Desktop
+![Demo](https://github.com/GuilhermeViveiros/LEI/blob/master/demo.gif)
 
 ## Relatorio
 [Relatorio](https://www.overleaf.com/8817112827nkrhbydjqgyf)
