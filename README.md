@@ -34,7 +34,7 @@ The developed pipeline has some similarities with personal assistants such as Al
 ### Trigger Hand
 
 The dataset chosen had to be the most similar to the environment in which this system will operate, in this case users who are in front of a computer and where the quality of the camera, brightness and adjacent noise can vary innumerably.
-The first experiment was carried out with a set of data provided by Oxford, called the Hands Dataset: [Oxford-HandsDataset](http://www.robots.ox.ac.uk/vgg/data/hands). However, the result was not what was desired and so it turned to researching an alternative set. Given the scarcity of research and availability carried out so far in this area, movement recognition for desktop (without the use of sensors), a dataset not very appropriate to the terms described, but where the results obtained are satisfactory and enough to show the efficiency of this prototype, namelly [Egohands Dataset](http://vision.soic.indiana.edu/projects/egohands)
+The first experiment was carried out with a set of data provided by Oxford, called the Hands Dataset: [Oxford-HandsDataset](http://www.robots.ox.ac.uk/vgg/data/hands). However, the result was not what was desired and so we tried to research an alternative set. Given the scarcity of research and availability carried out so far in this area, movement recognition for desktop (without the use of sensors), we used a dataset not very appropriate to the terms described, but where the results obtained are satisfactory and enough to show the efficiency of this prototype, namelly [Egohands Dataset](http://vision.soic.indiana.edu/projects/egohands)
 
 ![TriggerHand](https://github.com/GuilhermeViveiros/LEI/blob/master/images/Egohands-Dataset.png)
 
