@@ -43,7 +43,7 @@ Model training can be done locally, on local GPUs that would take some time, or 
 The machine used was supplied by the University of Minho, Department of Informatics (DI), which by reference, was a Nvidia Quadro P6000 GPU, with 24 GB of memory and a Ram size of 62.8 GB, which allowed the tuning, in a few days, of what would be the final model.
 After passing the dataset to the respective server, in a few hours it were possible to obtain results and analyze in order to make potential changes to the model.
    
-All of this model and successive API is provided by Tensorflow, Tensorboard was used in the visualization of the models, being the most significant parameter the loss of the same in the test dataset. Given the use of the Tensorflow Object Detection platform API for image detection, the training graphics were not made available, being which will only exemplify the loss of the model in the test set.
+All of this model and successive API is provided by Tensorflow, Tensorboard was used in the visualization of the models, being the most significant parameter the loss of the same in the test dataset. Given the use of the Tensorflow Object Detection platform API for image detection, the training graphics were not made available.
 Results after training:
 
 ![Mine](https://github.com/GuilhermeViveiros/LEI/blob/master/images/Hand-classification.png)
