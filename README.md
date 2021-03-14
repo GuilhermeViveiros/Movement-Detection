@@ -1,4 +1,4 @@
-## Virtual Environment with Gestual Commands on the Desktop
+## Real-time Movement-Detection using a pipeline of Deep Neural Networks on Tensorflow.
 ![Demo](https://github.com/GuilhermeViveiros/LEI/blob/master/images/demo.gif)
 
 
