@@ -1,6 +1,11 @@
 ## Real-time Movement-Detection using a pipeline of Deep Neural Networks on Tensorflow.
 ![Demo](https://github.com/GuilhermeViveiros/LEI/blob/master/images/demo.gif)
 
+## Git Structure 
+1. Task 1 - Frames captured in real-time through **CV2**.
+2. Task 2 - Hand Detection.
+3. Task 3 - Track the hand and send X frames to the pipeline.
+4. Task 4 - Detect the specific gesture and execute it, for instance, in the user's computer.
 
 **Note**
 *The following code won't work because the Models and weights used within this work are only shared upon request.*
@@ -78,11 +83,6 @@ Decisions to build a prototype were made throughout this work. These decisions h
 6. Using a more appropriate dataset for hand recognition or its construction is an important step in improving the environment because the dataset used does not have all the features of real cases, making system performance impractical in certain cases.
 
 7. Regarding the execution of the process regarding the performed gesture, one possible optimization is to switch from using the simulation (simulate the event of pressing the buttons) to the use of direct calls to the operating system, i.e. instead of using key simulations directly execute the desired process. This optimization would be achieved with the programming language C ++ and would be what connects the application with the operating system.
-
-## Git Structure 
-1. Task 1 - Frames captured in real-time through **CV2**.
-2. Task 2 - Hand Detection.
-3. Task 3 - Track the hand and send X frames to the pipeline.
-4. Task 4 - Detect the specific gesture and execute it, for instance, in the user's computer.
+8. 
 
 ## Paper can be found here : [Paper](https://github.com/GuilhermeViveiros/LEI/blob/master/publishedVersion.pdf)
