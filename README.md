@@ -10,7 +10,7 @@
 **Note**
 *The following code won't work because the Models and weights used within this work are only shared upon request.*
 For more details please contact one of the following:
-> [Guilherme Viveiros - Machine Learning Researcher - Owner](https://www.linkedin.com/in/guilherme-viveiros-28985418b/)\
+> [Guilherme Viveiros - Machine Learning Engineer - Owner](https://www.linkedin.com/in/guilherme-viveiros-28985418b/)\
 > [Luís Macedo - Software Engineer](https://www.linkedin.com/in/lu%C3%ADs-macedo-29315218b/)\
 > [Guilherme Andrade - Machine Learning Researcher](https://www.linkedin.com/in/guilherme-andrade-738715197/)
 
