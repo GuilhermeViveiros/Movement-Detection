@@ -1,4 +1,4 @@
-## Real-time Movement-Detection using a pipeline of Deep Neural Networks on Tensorflow.
+## Real-time Movement-Detection and Execution
 ![Demo](https://github.com/GuilhermeViveiros/LEI/blob/master/images/demo.gif)
 
 ## Git Structure 
