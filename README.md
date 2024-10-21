@@ -1,7 +1,7 @@
 ## Real-time Movement-Detection and Execution
 ![Demo](https://github.com/GuilhermeViveiros/LEI/blob/master/images/demo.gif)
 
-## Paper can be found here : [Paper](https://github.com/GuilhermeViveiros/LEI/blob/master/publishedVersion.pdf)
+## Paper can be found here : [Motion Detection in a Virtual Environment](https://github.com/GuilhermeViveiros/LEI/blob/master/publishedVersion.pdf)
 
 ## Git Structure 
 1. Task 1 - Frames captured in real-time through **CV2**.
